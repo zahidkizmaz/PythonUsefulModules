@@ -26,3 +26,19 @@ for line in smart_open('s3://mybucket/mykey.txt', 'rb'):
 for line in smart_open('./foo.txt.gz', encoding='utf8'):
   print(line)
 ```
+
+# Bounter Counter
+Bounter is a Python library, written in C, for extremely fast probabilistic counting of item frequencies in massive datasets, using only a small fixed memory footprint.
+Official website: <a href="https://github.com/RaRe-Technologies/bounter">link<a/>
+
+`pip install bounter`
+
+```python
+from bounter import bounter
+
+counts = bounter(size_mb=1024)  # use at most 1 GB of RAM
+counts.update([u'a', 'few', u'words', u'a', u'few', u'times'])  # count item frequencies
+
+print(counts[u'few'])  # query the counts
+2
+```
