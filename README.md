@@ -42,3 +42,19 @@ counts.update([u'a', 'few', u'words', u'a', u'few', u'times'])  # count item fre
 print(counts[u'few'])  # query the counts
 2
 ```
+# SymPy
+SymPy is a Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible.
+Official website: <a href="https://github.com/sympy/sympy">link<a/>
+
+If you have conda:
+`conda install sympy`
+or
+`pip install sympy`
+
+```python
+from sympy import Symbol, cos
+x = Symbol('x')
+e = 1/cos(x)
+print e.series(x, 0, 10)
+1 + x**2/2 + 5*x**4/24 + 61*x**6/720 + 277*x**8/8064 + O(x**10)
+```
