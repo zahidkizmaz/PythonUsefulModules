@@ -1,5 +1,6 @@
 # Useful and Efficent Python Modules
-List of useful python libraries and modules.
+Before we start you can check out <a href="http://book.pythontips.com/en/latest/index.html">this book</a> for python.
+<br/>List of useful python libraries and modules:
 
 # PyPy
 PyPy is a fast, compliant alternative implementation of the Python language (2 and 3). It has several advantages and distinct features.
